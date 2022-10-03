@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 450px;
+    background: #6f8faf;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode',Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    width: 500px;
+    background: #ccccff;
+    border-radius: 20px;
+    flex-direction: column;
+    padding:30px 20px ;
+    box-shadow: 2px 3px 5px rgba(74, 73, 73, 0.9);
+}
+
+.container .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.content .disable{
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+
+.container h1{
+    margin-bottom: 20px;
+    font-size: 45px;  
+    pointer-events: none;
+}
+
+.content select{
+padding: 5px 10px;
+border: 2px solid #6f8faf;
+border-radius:5px;
+font-family: inherit;
+font-weight: bold;
+font-size: 14px;
+outline: none;
+}
+
+.container button{
+    margin: 5px;
+    padding: 8px 15px;
+    width: 40%;
+    border: 2px solid #6f8faf;
+    border-radius:5px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer; 
+    transition: all 0.2s ease-in-out;
+}
+
+.container button:is(:hover,:focus) {
+    color: #fff;
+    background:#6f8faf;
+}
